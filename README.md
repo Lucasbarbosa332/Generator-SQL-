@@ -40,7 +40,7 @@ Este projeto está atualmente em desenvolvimento. Fique atento para atualizaçõ
  
   
 
- <img width=50% src="https://github.com/Lucasbarbosa332/Generator-SQL-/blob/main/post/Captura%20de%20tela%202024-12-02%20020758.png?raw=true"></img> <img width=50% src=""></img>
+ <img width=30% src="https://github.com/Lucasbarbosa332/Generator-SQL-/blob/main/post/Captura%20de%20tela%202024-12-02%20020758.png?raw=true"></img> <img width=30% src="https://github.com/Lucasbarbosa332/Generator-SQL-/blob/main/post/Captura%20de%20tela%202024-12-02%20020812.png?raw=true"></img>
 
  ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
