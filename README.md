@@ -1,7 +1,12 @@
 # Generator-SQL-
 SQL Generator, API and Validation
 
-# Em faze de deselvolvimneto 
+# 🚧 Em Fase de Desenvolvimento 🚧
+
+![Desenvolvimento em progresso](assets/development-progress.gif)
+
+Este projeto está atualmente em desenvolvimento. Fique atento para atualizações!
+
 
 
 # 📊 SQL Table Generator 🚀
