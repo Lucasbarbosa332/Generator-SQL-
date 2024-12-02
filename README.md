@@ -66,35 +66,35 @@ sql-table-generator/
 ````
 ## 📑 Funcionalidades
 
-1. 🏗️ Configuração de Tabelas SQL
+## 1. 🏗️ Configuração de Tabelas SQL
 * Descrição: O usuário pode configurar tabelas SQL ao definir um nome para a tabela, o nome das colunas e o tipo de dados de cada coluna (INTEGER, TEXT, REAL, BOOLEAN). Também é possível definir chaves primárias e estrangeiras.
 * Tecnologias: JavaScript (manipulação de DOM e lógica), HTML (formulários).
 
-2. 💾 Inserção de Dados
+## 2. 💾 Inserção de Dados
 * Descrição: Permite inserir dados de exemplo em tabelas criadas, ajudando a testar rapidamente a estrutura de dados.
 * Tecnologias: JavaScript (interação com os campos de dados).
 
-3. 🔎 Geração de Índices
+## 3. 🔎 Geração de Índices
 * Descrição: O sistema pode gerar índices para otimizar as consultas nas tabelas criadas. O usuário escolhe a tabela e a coluna a ser indexada.
 * Tecnologias: JavaScript (geração de código SQL).
 
-4. ⚙️ Validação de Dados
+## 4. ⚙️ Validação de Dados
 * Descrição: Permite a aplicação de validações nas colunas da tabela, como NOT NULL, UNIQUE ou DEFAULT.
 * Tecnologias: JavaScript (interação com o formulário).
 
-5. 🗂️ Importação de Dados
+## 5. 🗂️ Importação de Dados
 * Descrição: O sistema pode importar dados de arquivos CSV ou JSON para as tabelas criadas, permitindo a migração fácil de dados para o banco de dados.
 * Tecnologias: JavaScript (manipulação de arquivos e inserção de dados).
 
-6. 📝 Geração de SQL
+## 6. 📝 Geração de SQL
 * Descrição: O sistema gera o código SQL completo para criar a tabela, incluindo tipos de dados, chaves primárias, estrangeiras, validações e índices.
 * Tecnologias: JavaScript (geração e exibição de código SQL).
 
-7. 🌐 API Generation (Opcional, usando Python)
+## 7. 🌐 API Generation (Opcional, usando Python)
 * Descrição: Gera um modelo básico de API para interagir com os dados da tabela criada. A API pode ser configurada e consumida por outras aplicações.
 * Tecnologias: Flask (backend Python para a geração da API).
 
-8. 🧑‍💻 Depuração SQL
+## 8. 🧑‍💻 Depuração SQL
 * Descrição: Permite que o usuário insira consultas SQL para depurar ou testar diretamente em um banco de dados simulado.
 * Tecnologias: JavaScript (interação com consultas SQL).
 
