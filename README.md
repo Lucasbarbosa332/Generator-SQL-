@@ -3,7 +3,7 @@ SQL Generator, API and Validation
 
 # 🚧 Em Fase de Desenvolvimento 🚧
 
-![Desenvolvimento em progresso](assets/development-progress.gif)
+![Desenvolvimento em progresso](https://github.com/Lucasbarbosa332/Generator-SQL-/blob/main/post/load-loading.gif?raw=true)
 
 Este projeto está atualmente em desenvolvimento. Fique atento para atualizações!
 
