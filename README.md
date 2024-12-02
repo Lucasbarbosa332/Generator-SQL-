@@ -36,7 +36,13 @@ Este projeto está atualmente em desenvolvimento. Fique atento para atualizaçõ
  * Manipulação de DOM para criar novas colunas, remover colunas e exibir os resultados gerados.
 
  <div align="center">
+
+ 
   
+
+ <img width=50% src=""></img> <img width=50% src=""></img>
+
+ ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
   
 </div>
