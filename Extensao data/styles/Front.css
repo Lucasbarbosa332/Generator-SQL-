@@ -1,0 +1,188 @@
+/* Estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Main container */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Títulos principais */
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Seções */
+section {
+    margin-bottom: 30px;
+}
+
+/* Formulários */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], 
+input[type="file"], 
+select {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
+
+/* Botões */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #f1f1f1;
+}
+
+/* Texto em destaque */
+pre {
+    background-color: #f1f1f1;
+    padding: 15px;
+    border-radius: 4px;
+    font-family: monospace;
+    overflow-x: auto;
+}
+
+/* Seção de erro ou mensagens */
+#error-message {
+    color: red;
+    font-weight: bold;
+}
+
+/* Seções de Compartilhamento */
+#shared-link-output {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+#shared-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#shared-link:hover {
+    text-decoration: underline;
+}
+
+/* Adicionar estilos para campos de colunas e tabelas */
+.column-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.column-name,
+.column-type {
+    flex: 1;
+}
+
+.column-row input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.remove-column {
+    background-color: #ff4444;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.remove-column:hover {
+    background-color: #cc0000;
+}
+
+#add-column {
+    background-color: #28a745;
+}
+
+#add-column:hover {
+    background-color: #218838;
+}
+
+/* Estilo para o formulário de SQL */
+#sql-debug form input[type="text"] {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#sql-debug #sql-output {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    form {
+        margin-bottom: 15px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Tabelas SQL</title>
+    <link rel="stylesheet" href="/styles/Front.css">
+</head>
+<body>
+    <main>
+        <section id="table-config">
+            <h2>Configurar Tabelas</h2>
+            <form id="table-form">
+                <input type="text" id="table-name" placeholder="Nome da Tabela" required>
+                <div id="columns">
+                    <div class="column-row">
+                        <input type="text" placeholder="Nome da Coluna" class="column-name" required>
+                        <select class="column-type">
+                            <option value="INTEGER">INTEGER</option>
+                            <option value="TEXT">TEXT</option>
+                            <option value="REAL">REAL</option>
+                            <option value="BOOLEAN">BOOLEAN</option>
+                        </select>
+                        <input type="checkbox" class="is-primary" title="Chave Primária">
+                        <label for="foreign-key">Chave Estrangeira</label>
+                        <input type="checkbox" class="is-foreign-key" title="Chave Estrangeira">
+                        <button type="button" class="remove-column">Remover</button>
+                    </div>
+                </div>
+                <button type="button" id="add-column">Adicionar Coluna</button>
+                <button type="submit">Gerar SQL</button>
+            </form>
+        </section>
+    
+        <section id="insert-data">
+            <h2>Inserir Dados de Exemplo</h2>
+            <form id="data-form">
+                <div id="data-fields"></div>
+                <button type="button" id="add-data">Adicionar Dados</button>
+                <button type="submit">Inserir Dados</button>
+            </form>
+        </section>
+    
+        <section id="data-output">
+            <h2>Dados Inseridos</h2>
+            <table id="data-table">
+                <thead>
+                    <tr id="table-header"></tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </section>
+    
+        <section id="import-data">
+            <h2>Importar Dados</h2>
+            <input type="file" id="file-upload" accept=".csv, .json">
+            <button type="button" id="import-button">Importar Dados</button>
+        </section>
+    
+        <!-- Seção de Geração de Índices -->
+        <section id="generate-index">
+            <h2>Geração de Índices</h2>
+            <form id="index-form">
+                <input type="text" id="index-table-name" placeholder="Nome da Tabela" required>
+                <select id="column-select" required>
+                    <option value="">Selecione uma coluna</option>
+                    <!-- As colunas serão preenchidas dinamicamente -->
+                </select>
+                <button type="button" id="generate-index-button">Gerar Índice</button>
+            </form>
+    
+            <h3>Código SQL Gerado</h3>
+            <textarea id="index-output" readonly></textarea>
+        </section>
+    
+        <section id="validation">
+            <h2>Validação de Dados</h2>
+            <form id="validation-form">
+                <label for="validation-column">Escolha a Coluna para Validação:</label>
+                <select id="validation-column"></select>
+                <label for="validation-type">Tipo de Validação:</label>
+                <select id="validation-type">
+                    <option value="NOT NULL">NOT NULL</option>
+                    <option value="UNIQUE">UNIQUE</option>
+                    <option value="DEFAULT">DEFAULT</option>
+                </select>
+                <button type="submit">Aplicar Validação</button>
+            </form>
+        </section>
+    
+        <section id="database-select">
+            <h2>Escolha o Banco de Dados</h2>
+            <select id="db-select">
+                <option value="mysql">MySQL</option>
+                <option value="postgresql">PostgreSQL</option>
+                <option value="sqlite">SQLite</option>
+            </select>
+        </section>
+        
+        <!-- Botão para gerar o SQL -->
+        <button type="button" id="generate-sql">Gerar SQL</button>
+        
+        <!-- Área para exibir o SQL gerado -->
+        <h3>Código SQL Gerado</h3>
+        <pre id="sql-output"></pre>
+    
+        <section id="api-output-section">
+            <h2>Código da API Gerado</h2>
+            <pre id="api-output"></pre>
+        </section>
+        
+    
+        <section id="sql-debug">
+            <h2>Depuração SQL</h2>
+            <form id="sql-form">
+                <input type="text" id="sql-query" placeholder="Digite sua consulta SQL">
+                <button type="submit">Executar Consulta</button>
+            </form>
+            <div id="sql-output"></div>
+        </section>
+        
+    
+        <section id="project-sharing">
+            <h2>Compartilhar Projeto</h2>
+            <button id="share-project">Compartilhar Projeto</button>
+            <div id="shared-link-output" style="display:none;">
+                <p>Seu projeto foi compartilhado. Acesse com o link abaixo:</p>
+                <a id="shared-link" href="" target="_blank">Acessar Projeto Compartilhado</a>
+            </div>
+        </section>
+        
+    
+        <section id="documentation">
+            <h2>Documentação Automática</h2>
+            <button id="generate-doc">Gerar Documentação</button>
+            <div id="documentation-output"></div>
+        </section>
+    </main>
+    
+
+    <script src="/src/main.js"></script>
+    <script src="/js/insert-data.js"></script>
+    <script src="/js/import-data.js"></script>
+    <script src="/js/indexing.js"></script>
+    <script src="/js/validation.js"></script>
+    <script src="js/database-select.js"></script>
+    <script src="js/api-generation.js"></script>
+    <script src="/js/sqlDebug.js"></script>
+    <script src="/js/projectsharing.js"></script>
+    <script src="js/documentation.js"></script>
+    <script src="/js/foreign-keys.js"></script>
+    <script src="/js/generateAPI.js"></script>
+
+</body>
+</html>
