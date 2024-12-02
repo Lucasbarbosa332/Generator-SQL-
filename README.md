@@ -35,6 +35,12 @@ Este projeto está atualmente em desenvolvimento. Fique atento para atualizaçõ
  * Eventos DOM para capturar ações do usuário (clique, envio de formulários, etc.).
  * Manipulação de DOM para criar novas colunas, remover colunas e exibir os resultados gerados.
 
+ <div align="center">
+  
+
+  
+</div>
+
 🐍 Backend (Opcional)
  
  * Python (usando Flask): Um backend simples para processamento de dados mais complexos (como validação ou simulação de banco de dados) se necessário.
